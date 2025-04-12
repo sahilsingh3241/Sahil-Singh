@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Registration Form</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Scholarship Registration Form</h1>
+    
+    <form>
+        <fieldset>
+            <legend><h3>User Personal Information</h3></legend>
+            <label for="first-name">Enter your full name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required><br>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirm-password">Confirm your password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Educational Info</h3></legend>
+
+            <label>Select your Branch:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="emtech" name="branch" value="Emtech">
+                <label for="emtech">Emtech</label>
+
+                <input type="checkbox" id="cse" name="branch" value="CSE">
+                <label for="cse">CSE</label>
+
+                <input type="checkbox" id="it" name="branch" value="IT">
+                <label for="it">IT</label>
+
+                <input type="checkbox" id="etc" name="branch" value="ETC">
+                <label for="etc">ETC</label>
+
+                <input type="checkbox" id="civil" name="branch" value="Civil">
+                <label for="civil">Civil</label>
+
+                <input type="checkbox" id="mech" name="branch" value="Mech">
+                <label for="mech">Mech</label>
+            </div>
+
+            <label for="ssc-marks">SSC % marks:</label>
+            <input type="text" id="ssc-marks" name="ssc-marks" required>
+
+            <label for="hsc-marks">HSC % marks:</label>
+            <input type="text" id="hsc-marks" name="hsc-marks" required>
+
+            <label for="btech-marks">B.Tech % marks:</label>
+            <input type="text" id="btech-marks" name="btech-marks" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Upload Documents</h3></legend>
+
+            <label for="photo">Upload photo:</label>
+            <input type="file" id="photo" name="photo" required><br>
+
+            <label for="income-certificate">Income certificate:</label>
+            <input type="file" id="income-certificate" name="income-certificate" required><br>
+
+            <label for="caste-certificate">Caste certificate:</label>
+            <input type="file" id="caste-certificate" name="caste-certificate" required>
+        </fieldset>
+
+        <input type="submit" class="submit-btn" value="Register">
+    </form>
+
+</body>
+</html>
